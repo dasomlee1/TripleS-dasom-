@@ -1,0 +1,263 @@
+@media screen and (max-width: 1400px) {
+}
+@media screen and (max-width: 1200px) {
+  #header .breadcrumb {
+    display: none;
+  }
+  #content {
+    max-width: 95%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .analysis-contents .analysis-keywords {
+    width: 15.4%;
+  }
+  .analysis-contents .analysis-area {
+    width: 39%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #header h1.header-logo {
+    width: 100%;
+    text-align: center;
+  }
+  #header .header-info .menu {
+    display: block;
+    position: absolute;
+    left: 3%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  #header .header-info .user-info {
+    display: none;
+  }
+  #aside,
+  #aside-depth {
+    display: none;
+  }
+  #container {
+    padding-left: 0;
+  }
+  #content {
+    width: 90%;
+  }
+  /*키워드분석 */
+  .anlysis-page-wrap .input-box {
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .shopping-category {
+    display: none;
+  }
+  .analysis-contents .analysis-area {
+    width: 100%;
+    margin-left: 0;
+  }
+  .analysis-contents .analysis-area:last-of-type {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 130%;
+    width: 100%;
+    padding-bottom: 60px;
+  }
+  .analysis-contents .analysis-area .chart-area {
+    height: 200px;
+  }
+  .analysis-contents .analysis-keywords {
+    position: absolute;
+    top: 103%;
+    width: 100%;
+  }
+  .analysis-contents .analysis-keywords .related-keywords {
+    overflow: hidden;
+    overflow-y: auto;
+    height: 250px;
+    padding-bottom: 0;
+  }
+  .analysis-contents .analysis-keywords .related-keywords button {
+    display: none;
+  }
+  .table-type2 th,
+  .table-type2 td {
+    display: block;
+    width: 100%;
+  }
+  .table-type2 colgroup {
+    display: none;
+  }
+  /* 키워드 입력 */
+  .keyword-input-wrap .keyword-input-area {
+    float: none;
+    width: 100%;
+  }
+  .keyword-input-wrap .keyword-input-area dt {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .keyword-input-wrap .keyword-input-area dd {
+    display: block;
+  }
+  .keyword-input-wrap .keyword-input-area:last-of-type dd {
+    margin-top: 15px;
+  }
+  .keyword-input-wrap .keyword-input-area dd .btn-wrap .submit-btn {
+    width: 100px;
+    height: 50px;
+    background: #fff;
+    border: 2px solid #00d39c;
+    color: #00d39c;
+    font-weight: 600;
+  }
+  .radio {
+    width: 20%;
+    margin-right: 3%;
+    line-height: 36px;
+  }
+  .radio input[type="radio"] + label:before {
+    top: 7px;
+  }
+  .radio input[type="radio"] + label:after {
+    top: 11px;
+  }
+  .radio input[type="radio"]:checked + label:before {
+    top: 7px;
+  }
+  .radio input[type="radio"]:checked + label:after {
+    top: 11px;
+  }
+  .keyword-search-wrap .search-input {
+    width: 100%;
+  }
+  .keyword-search-wrap .search-input input[type="text"] {
+    width: 90%;
+  }
+  .keyword-search-wrap .search-input .search-btn {
+    width: 10%;
+  }
+  .keyword-search-wrap .table-type3 {
+    max-width: 900px;
+    overflow-x: auto;
+  }
+  .keyword-search-wrap .btn-area {
+    position: relative;
+    width: 100%;
+    text-align: center;
+  }
+  .keyword-search-wrap .btn-area button {
+    width: 100px;
+    height: 50px;
+  }
+  /* 키워드결과 */
+  .keyword-search-wrap .excel-download {
+    display: none;
+  }
+  .keyword-search-wrap .notice-text {
+    display: block;
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
+    margin-top: 10px;
+    background: #777;
+    color: #fff;
+    text-align: center;
+    font-size: 13px;
+  }
+  .keyword-search-wrap .notice-text span {
+    font-weight: 600;
+  }
+  .result-page-wrap .date-wrap {
+    width: 100%;
+  }
+  .ui.form:not(.unstackable) .two.fields:not(.unstackable) > .field {
+    margin: 0;
+  }
+  /* table tooltip */
+  .keyword-search-wrap .keyword-result:hover td > .table-tooltip {
+    display: none;
+  }
+  .m-table-tooltip {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 120px;
+    padding: 10px;
+    margin-bottom: 35px;
+    border-radius: 10px;
+    border: solid 2px #eee;
+    background: #fff;
+    box-sizing: border-box;
+  }
+  .m-table-tooltip .tooltip {
+    width: 100%;
+    height: 100%;
+  }
+  .m-table-tooltip .tooltip > li {
+    width: 100%;
+    height: 60px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  .m-table-tooltip .tooltip > li:last-child {
+    border-bottom: 0;
+    line-height: 50px;
+  }
+  .m-table-tooltip .tooltip > li span {
+    margin-right: 10px;
+    font-size: 12px;
+    letter-spacing: -0.6px;
+    color: #444;
+    font-weight: 600;
+  }
+  .m-table-tooltip .tooltip > li strong {
+    display: block;
+    margin-top: 25px;
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: -1.54px;
+    font-weight: 700;
+  }
+  .m-table-tooltip .tooltip > li .point li {
+    float: left;
+    width: 50%;
+    background-position: 100% 50%;
+    background-size: 100%;
+    font-size: 1.8rem;
+    letter-spacing: -0.9px;
+    text-align: center;
+  }
+  .m-table-tooltip .tooltip > li .point li.up {
+    color: #00d39c;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  /* 키워드입력 */
+  .keyword-search-wrap .search-input input[type="text"] {
+    width: 85%;
+  }
+  .keyword-search-wrap .search-input .search-btn {
+    width: 15%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .field:first-of-type .ui.input > input {
+    border-right: 2px solid #e5e5e5;
+    border-bottom: 0;
+  }
+}
+@media screen and (max-width: 640px) {
+}
+@media screen and (max-width: 480px) {
+  html,
+  body {
+    font-size: 60%;
+  }
+}
+@media screen and (max-width: 360px) {
+  .anlysis-page-wrap .input-box button {
+    font-size: 2rem;
+  }
+}
