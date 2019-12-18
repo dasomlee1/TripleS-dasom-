@@ -4,6 +4,7 @@ $(function() {
   });
   sidevarMenu();
   mobileMenu();
+  mobileTooltip();
 });
 
 function sidevarMenu() {
@@ -79,5 +80,17 @@ function mobileMenu() {
   $menuDepthList.click(function() {
     $menuDepthList.removeClass("active");
     $(this).addClass("active");
+  });
+}
+
+function mobileTooltip() {
+  $btnClose = $(".m-tooltip-wrap .m-tooltip button");
+
+  $btnClose.click(function() {
+    $(".m-tooltip-wrap").hide();
+  });
+
+  $(".m-tooltip1").click(function() {
+    $(".tooltip1").show();
   });
 }
