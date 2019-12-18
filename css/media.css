@@ -87,7 +87,7 @@
   .table-type2 colgroup {
     display: none;
   }
-  /* 키워드 입력 */
+  /* 공통 - 키워드 입력 */
   .keyword-input-wrap .keyword-input-area {
     float: none;
     width: 100%;
@@ -103,9 +103,9 @@
   .keyword-input-wrap .keyword-input-area:last-of-type dd {
     margin-top: 15px;
   }
-  .keyword-input-wrap .keyword-input-area dd .btn-wrap .submit-btn {
+  .keyword-input-wrap .keyword-input-area dd .btn-wrap .btn-submit {
     width: 100px;
-    height: 50px;
+    height: 42px;
     background: #fff;
     border: 2px solid #00d39c;
     color: #00d39c;
@@ -138,7 +138,7 @@
     width: 10%;
   }
   .keyword-search-wrap .table-type3 {
-    max-width: 900px;
+    max-width: 100%;
     overflow-x: auto;
   }
   .keyword-search-wrap .btn-area {
@@ -150,7 +150,14 @@
     width: 100px;
     height: 50px;
   }
-  /* 키워드결과 */
+  /* 쇼핑 - 키워드입력 */
+  .keyword-input-wrap .keyword-input-area dd select {
+    margin-top: 10px;
+  }
+  /* 공통 - 결과 페이지 */
+  .keyword-search-wrap form {
+    width: 100%;
+  }
   .keyword-search-wrap .excel-download {
     display: none;
   }
@@ -173,6 +180,37 @@
   }
   .ui.form:not(.unstackable) .two.fields:not(.unstackable) > .field {
     margin: 0;
+  }
+  /* 쇼핑 - 결과 페이지 */
+  .shopping-search-wrap .btn-info {
+    display: none;
+  }
+  .shopping-search-wrap .txt {
+    padding-bottom: 15px;
+  }
+  .shopping-search-wrap .radio-wrap {
+    display: block;
+    margin-top: 15px;
+    text-align: center;
+  }
+  .shopping-search-wrap .radio-wrap .radio {
+    display: inline-block;
+    width: 40%;
+    margin: 0;
+  }
+  /* 성공지표 */
+  .shopping-search-wrap .btn-info2 {
+    display: none;
+  }
+  .shopping-result-wrap .radio-wrap {
+    z-index: 30;
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+  }
+  .shopping-result-wrap .radio-wrap .radio {
+    width: 30%;
+    margin-right: 0;
   }
   /* table tooltip */
   .keyword-search-wrap .keyword-result:hover td > .table-tooltip {
@@ -255,8 +293,24 @@
   body {
     font-size: 60%;
   }
+  .shopping-search-wrap .search-input input[type="text"] {
+    overflow: hidden;
+    width: 65% !important;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+  }
+  .shopping-search-wrap select {
+    width: 18%;
+    background: none;
+    text-indent: 2px;
+    text-align: left;
+  }
 }
 @media screen and (max-width: 360px) {
+  .keyword-search-wrap .search-input .search-btn {
+    font-size: 1.6rem;
+  }
   .anlysis-page-wrap .input-box button {
     font-size: 2rem;
   }

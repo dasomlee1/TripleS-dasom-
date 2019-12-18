@@ -3,6 +3,7 @@ $(function() {
     e.preventDefault();
   });
   sidevarMenu();
+  mobileMenu();
 });
 
 function sidevarMenu() {
@@ -28,6 +29,55 @@ function sidevarMenu() {
       .eq(cnt)
       .show();
     $menuDepth.removeClass("active");
+    $(this).addClass("active");
+  });
+}
+
+function mobileMenu() {
+  var $menu = $(".m-menu .menu .list");
+  var $menuDepth = $(".m-menu-depth");
+  var $menuDepthList = $(".m-menu-depth .menu-depth .list");
+
+  $("#header .menu").click(function() {
+    $("#mobileMenu").show();
+    $("body").css("overflow", "hidden");
+  });
+  $(".all-menu").click(function() {
+    $("#mobileMenu").hide();
+    $("body").css("overflow", "visible");
+  });
+
+  $(".btn-option").click(function() {
+    $(".m-option-wrap").show();
+    $("body").css("overflow", "hidden");
+  });
+
+  $(".m-option-wrap .option-header button").click(function() {
+    $(".m-option-wrap").hide();
+    $("body").css("overflow", "visible");
+  });
+
+  $menuDepth.hide();
+  $menuDepth.first().show();
+
+  $menu.click(function() {
+    cnt = $(this).index();
+    console.log(cnt);
+    $menu.removeClass("active");
+    $(this).addClass("active");
+
+    if (cnt === 0) {
+      $menuDepth.hide();
+    } else {
+      $menuDepth
+        .hide()
+        .eq(cnt - 1)
+        .show();
+    }
+  });
+
+  $menuDepthList.click(function() {
+    $menuDepthList.removeClass("active");
     $(this).addClass("active");
   });
 }

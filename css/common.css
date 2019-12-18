@@ -30,6 +30,9 @@ h3 img {
 h3 img:hover + .tooltip-wrap {
   display: inline-block;
 }
+dt img:hover + .tooltip-wrap {
+  display: inline-block;
+}
 .title-box {
   position: relative;
   display: block;
@@ -44,12 +47,44 @@ h3 img:hover + .tooltip-wrap {
   color: #00d39c;
 }
 .title-box .desc {
-  font-size: 1.55rem;
   margin-top: 10px;
+  line-height: 1.5;
+  font-size: 1.55rem;
   color: #7b7b7b;
+  word-break: keep-all;
 }
 .title-box .desc em {
   color: #00d39c;
+}
+.color-emphasis {
+  color: #00d39c;
+}
+.product-title-wrap {
+  overflow: hidden;
+  width: 100%;
+  color: #444;
+}
+.product-title-wrap .product-title {
+  float: left;
+  padding: 0 27px 0 85px;
+  font-size: 4rem;
+  letter-spacing: -2px;
+  font-weight: 600;
+  border-right: solid 4px #d2d2d2;
+}
+.product-title-wrap .product-desc {
+  float: left;
+  padding-left: 30px;
+  font-size: 1.8rem;
+  letter-spacing: -0.9px;
+  line-height: 1.5;
+}
+.product-title-wrap .btn-move {
+  float: left;
+  padding-left: 100px;
+}
+.product-title-wrap .btn-info {
+  margin-top: 15px;
 }
 
 /* chexkbox, radio */
@@ -169,11 +204,12 @@ h3 img:hover + .tooltip-wrap {
 table {
   table-layout: fixed;
 }
+table th {
+  position: relative;
+}
 table th,
 table td {
-  /* overflow: hidden; */
-  position: relative;
-  z-index: 10;
+  overflow: hidden;
   padding: 0 2%;
   font-size: 1.5rem;
   letter-spacing: -0.75px;
@@ -222,17 +258,17 @@ table td {
 }
 
 .table-type3 {
-  border: 1px solid #b5b5b5;
+  border: 1px solid #dfdfdf;
   border-width: 1px 0;
 }
 .table-type3 th {
   height: 42px;
-  background-color: #ededed;
+  background-color: #eee;
   font-weight: 600;
 }
 .table-type3 td {
   height: 42px;
-  border-top: 1px solid #b5b5b5;
+  border-top: 1px solid #dfdfdf;
   text-align: center;
 }
 
@@ -281,11 +317,12 @@ table td {
 .tooltip-wrap {
   display: none;
   position: absolute;
+  z-index: 30;
   left: 115%;
   top: -20px;
 }
 .tooltip-wrap .text {
-  min-width: 240px;
+  min-width: 210px;
   line-height: 1.5;
   padding: 10px;
   border-radius: 10px;
@@ -295,6 +332,7 @@ table td {
   font-size: 1.4rem;
   letter-spacing: -0.7px;
   word-break: keep-all;
+  text-align: left;
 }
 .tooltip-wrap .text:before {
   content: "";
@@ -308,9 +346,43 @@ table td {
   border: 10px solid transparent;
   border-right-color: #333;
 }
+.tooltip-wrap .text .color-yellow {
+  color: #f1e400;
+}
+.tooltip-wrap2 {
+  left: 50%;
+  transform: translateX(-50%);
+  top: 45px;
+}
+.tooltip-wrap2 .text:before {
+  z-index: 2;
+  left: 50%;
+  top: -20px;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-bottom-color: #333;
+}
+.tooltip-wrap3 {
+  left: 91%;
+  top: 50px;
+}
+.tooltip-wrap3 .text:before {
+  z-index: 2;
+  left: 50%;
+  top: 100%;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-top-color: #333;
+}
+
 /* table tooltip */
+.table-tooltip-wrap {
+  position: relative;
+}
 .table-tooltip {
-  display: none;
+  /* display: none; */
   position: absolute;
   z-index: 10;
   top: 20%;
@@ -351,8 +423,6 @@ table td {
   letter-spacing: -1.54px;
   font-weight: 700;
 }
-.table-tooltip .tooltip > li .point {
-}
 .table-tooltip .tooltip > li .point li {
   float: left;
   width: 50%;
@@ -368,7 +438,6 @@ table td {
 .m-table-tooltip {
   display: none;
 }
-
 /* 달력 */
 .ui.table {
   border: 0 !important;

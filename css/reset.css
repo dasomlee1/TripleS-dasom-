@@ -301,7 +301,11 @@ legend {
  *    and Chrome.
  * 3. Improve appearance and consistency in all browsers.
  */
-
+button {
+  cursor: pointer;
+  background: none;
+  border: 0;
+}
 button,
 input,
 select,
@@ -434,7 +438,16 @@ button,
 input,
 select,
 textarea {
-  color: #222;
+  color: #444;
+}
+select {
+  -webkit-appearance: none; /* 네이티브 외형 감추기 */
+  -moz-appearance: none;
+  appearance: none;
+}
+/* IE 10, 11의 네이티브 화살표 숨기기 */
+select::-ms-expand {
+  display: none;
 }
 
 ::-moz-selection {

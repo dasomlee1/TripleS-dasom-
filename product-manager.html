@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>TripleS</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/date.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/contents.css" />
+    <link rel="stylesheet" href="./css/media.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header id="header" class="cf">
+      <h1 class="header-logo">
+        <a href="/">
+          <img src="./images/logo.png" alt="TrippleS" />
+        </a>
+      </h1>
+      <div class="header-info">
+        <button class="menu"><img src="images/icon/ico_menu.png" />menu</button>
+        <span class="user-info">
+          <b>Admin</b> 님 안녕하세요 :)
+          <button class="logout">Logout</button>
+        </span>
+      </div>
+      <ul class="breadcrumb">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Admin</a></li>
+        <li><a href="#">신규키워드 관리</a></li>
+        <li><a href="#">키워드 핵심분석</a></li>
+      </ul>
+    </header>
+    <!-- 모바일 메뉴 -->
+    <div id="mobileMenu">
+      <div class="inner">
+        <button class="all-menu"><img src="images/icon/ico_menu2.png" />menu</button>
+        <div class="m-header cf">
+          <div class="user-img"></div>
+          <p class="user-name"><b>Admin</b> 님<br/>안녕하세요:)</p>
+          <a href="#" class="btn-mypage"><img src="./images/icon/ico_my.png" alt="마이페이지"></a>
+        </div>
+        <nav class="m-menu">
+          <ul class="menu cf">
+            <li class="list">
+              <a href="#">
+                <span class="menu-img">
+                  <img src="./images/icon/ico_dash.png" alt="대시보드">
+                </span>
+                <span class="text">Dash<br>board</span>
+              </a>
+            </li>
+            <li class="list active">
+              <a href="#">
+                <span class="menu-img">
+                  <img src="./images/icon/ico_newkey.png" alt="신규키워드관리">
+                </span>
+                <span class="text">신규키워드<br>관리</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="#">
+                <span class="menu-img">
+                  <img src="./images/icon/ico_shopkey.png" alt="쇼핑키워드관리">
+                </span>
+                <span class="text">쇼핑키워드<br>관리</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="#">
+                <span class="menu-img">
+                  <img src="./images/icon/ico_sta.png" alt="매출통계">
+                </span>
+                <span class="text">매출<br>통계</span class="text">
+              </a>
+            </li>
+            <li class="list">
+              <a href="#">
+                <span class="menu-img">
+                  <img src="./images/icon/ico_pro.png" alt="상품관리">
+                </span>
+                <span class="text">상품<br>관리</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="#">
+                <span class="menu-img">
+                  <img src="./images/icon/ico_in.png" alt="입/출고관리">
+                </span>
+                <span class="text">입/출고<br>관리</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="#">
+                <span class="menu-img">
+                  <img src="./images/icon/ico_od.png" alt="주문현황 관리">
+                </span>
+                <span class="text">주문현황<br>관리</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="#">
+                <span class="menu-img">
+                  <img src="./images/icon/ico_logout.png" alt="로그아웃">
+                </span>
+                <span class="text">로그<br>아웃</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="m-menu-depth-wrap">
+          <div class="m-menu-depth">
+            <h2 class="menu-title">신규 키워드 관리</h2>
+            <ul class="menu-depth cf">
+              <li class="list active">
+                <a href="#">
+                  키워드 핵심분석
+                </a>
+              </li>
+              <li class="list">
+                <a href="#">
+                  키워드 입력
+                </a>
+              </li>
+              <li class="list">
+                <a href="#">
+                  키워드 결과
+                </a>
+              </li>
+            </ul> 
+          </div>
+          <div class="m-menu-depth">
+            <h2 class="menu-title">쇼핑 키워드 관리</h2>
+            <ul class="menu-depth cf">
+              <li class="list active">
+                <a href="#">
+                  키워드 입력
+                </a>
+              </li>
+              <li class="list">
+                <a href="#">
+                  순위체크 결과
+                </a>
+              </li>
+              <li class="list">
+                <a href="#">
+                  성공지표
+                </a>
+              </li>
+            </ul> 
+          </div>
+          <div class="m-menu-depth">
+            <h2 class="menu-title">매출통계</h2>
+            <ul class="menu-depth cf">
+              <li class="list active">
+                <a href="#">
+                  상품별 판매순위
+                </a>
+              </li>
+              <li class="list">
+                <a href="#">
+                  요일별 판매순위
+                </a>
+              </li>
+              <li class="list">
+                <a href="#">
+                  채널별 매출 현황
+                </a>
+              </li>
+            </ul> 
+          </div>
+          <div class="m-menu-depth">
+            <h2 class="menu-title">상품관리</h2>
+            <ul class="menu-depth cf">
+              <li class="list active">
+                <a href="#">
+                  상품등록
+                </a>
+              </li>
+              <li class="list">
+                <a href="#">
+                  대량상품등록
+                </a>
+              </li>
+              <li class="list">
+                <a href="#">
+                  상품목록
+                </a>
+              </li>
+              <li class="list">
+                <a href="#">
+                  판매채널관리
+                </a>
+              </li>
+            </ul> 
+          </div>
+          <div class="m-menu-depth">
+            <h2 class="menu-title">입/출고 관리</h2>
+            <ul class="menu-depth cf">
+              <li class="list active">
+                <a href="#">
+                  상품입고등록
+                </a>
+              </li>
+              <li class="list">
+                <a href="#">
+                  상품재고현황
+                </a>
+              </li>
+            </ul> 
+          </div>
+          <div class="m-menu-depth">
+            <h2 class="menu-title">주문현황 관리</h2>
+            <ul class="menu-depth cf">
+              <li class="list active">
+                <a href="#">
+                  주문현황입력
+                </a>
+              </li>
+            </ul> 
+          </div>
+        </div>
+        <div class="m-btn-option-wrap">
+          <h2 class="menu-title">옵션번호 상품검색</h2>
+          <button class="btn-option"><img src="./images/icon/ico_search.png" alt="검색창으로 이동"></button>
+        </div>
+      </div>
+      <!-- 모바일 옵션번호 상품검색 -->
+      <div class="m-option-wrap">
+        <div class="inner">
+          <div class="option-header">
+            <button>
+              <img src="./images/icon/ico_left.png" alt="뒤로가기">뒤로가기
+            </button>
+            <h2 class="menu-title">옵션번호 상품검색</h2>
+            <form action="#">
+              <div class="option-box">
+                <input type="text" />
+                <button type="submit">
+                  <img src="./images/icon/ico_search.png" alt="검색" />
+                </button>
+              </div>
+            </form>
+            <div class="option-result cf">
+              <div class="option-img">
+                <img src="http://placehold.it/100x100" alt="상품" />
+              </div>
+              <p class="option-name">
+                <span class="label">hd001</span>후디후디 후드티 
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- side menu -->
+    <div id="aside">
+      <nav class="nav-link">
+        <ul>
+          <li class="link">
+            <a href="#"
+              ><img
+                src="images/icon/ico_dash.png"
+                alt="Dashboard"
+              />Dashboard</a
+            >
+          </li>
+          <li class="link">
+            <a href="#"
+              ><img
+                src="images/icon/ico_newkey.png"
+                alt="신규 키워드관리"
+              />신규 키워드관리</a
+            >
+          </li>
+          <li class="link">
+            <a href="#"
+              ><img
+                src="images/icon/ico_shopkey.png"
+                alt="쇼핑 키워드관리"
+              />쇼핑 키워드관리</a
+            >
+          </li>
+          <li class="link">
+            <a href="#"
+              ><img src="images/icon/ico_sta.png" alt="매출통계" />매출통계</a
+            >
+          </li>
+          <li class="link">
+            <a href="#"
+              ><img src="images/icon/ico_pro.png" alt="상품관리" />상품관리</a
+            >
+          </li>
+          <li class="link">
+            <a href="#"
+              ><img src="images/icon/ico_in.png" alt="입/출고 관리" />입/출고
+              관리</a
+            >
+          </li>
+          <li class="link">
+            <a href="#"
+              ><img src="images/icon/ico_od.png" alt="주문 현황관리" />주문
+              현황관리</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <!-- 옵션번호 상품검색 -->
+      <div class="search-option-box">
+        <span class="title">옵션번호 상품검색</span>
+        <form action="#">
+          <div class="option-box">
+            <input type="text" />
+            <button type="submit">
+              <img src="./images/icon/ico_search.png" alt="검색" />
+            </button>
+          </div>
+        </form>
+        <div class="option-img">
+          <img src="http://placehold.it/100x100" alt="상품" />
+        </div>
+        <p class="option-name">
+          hd001 - 후디후디 후드티
+        </p>
+      </div>
+    </div>
+    <!-- side menu depth-->
+    <div id="aside-depth">
+      <nav class="nav-link">
+        <a href="#" class="active">상품등록</a>
+        <a href="#">대량 상품등록</a>
+        <a href="#">상품목록</a>
+        <a href="#">기획/세트 상품 관리</a>
+        <a href="#">판매채널관리</a>
+      </nav>
+    </div>
+    <!-- contents -->
+    <div id="container">
+      <div id="content">
+        <!-- 상품등록 - 단일상품 -->
+        <section class="section single-register-page">
+            <div class="product-title-wrap">
+                <h3 class="product-title">상품등록</h3>
+                <p class="product-desc">단일 또는 가격이 같은 옵션 상품을 등록하여,<br/><em class="color-emphasis">Data 추출 및 분석</em>의 기반을 잡아주는 페이지 입니다. </p>
+                <button class="btn-move"><img src="./images/btn_move.png" alt="대량상품 등록"></button>
+                <button class="btn-info"><img src="./images/icon/ico_info2.png" alt="도움말"></button>
+            </div>
+            <div class="product-info-wrap">
+                <div class="product-info-box">
+                    <div class="product-txt">
+                        <h4>[ 상품정보 ]</h4>
+                        <p><em class="color-emphasis">상품정보</em>를 입력해주세요!</p>
+                    </div>
+                    <div class="product-mid">
+                        <form action="">
+                            <label for="mid">mid</label>
+                            <input type="text" id="mid" placeholder="상품명을 입력해주세요."/>
+                        </form>
+                    </div>
+                </div>
+                <div class="product-info-form">
+                    <form action="">
+                        <dl class="product-input-area input-half fl-left">
+                            <dt>상품명</dt>
+                            <dd>
+                                <input
+                                type="text"
+                                id=""
+                                placeholder="상품명을 입력해주세요."
+                                />
+                            </dd>
+                        </dl>
+                        <dl class="product-input-area input-half fl-right">
+                            <dt>모델명</dt>
+                            <dd>
+                                <input
+                                type="text"
+                                id=""
+                                placeholder="모델명이나 상품코드를 입력해주세요."
+                                />
+                            </dd>
+                        </dl>
+                        <dl class="product-input-area">
+                            <dt>옵션1</dt>
+                            <dd>
+                                <input
+                                type="text"
+                                id=""
+                                placeholder="옵션이 여러가지일 경우 콤마(,)를 이용하여 입력해주세요. ex)블랙,화이트,그레이"
+                                />
+                            </dd>
+                        </dl>
+                        <dl class="product-input-area">
+                            <dt>옵션2</dt>
+                            <dd>
+                                <input
+                                type="text"
+                                id=""
+                                placeholder="옵션이 여러가지일 경우 콤마(,)를 이용하여 입력해주세요. ex) 블랙, 화이트, 그레이"
+                                />
+                            </dd>
+                        </dl>
+                        <dl class="product-input-area fl-left">
+                            <dt>옵션코드</dt>
+                            <dd>
+                                <input
+                                type="text"
+                                id=""
+                                placeholder="옵션 각각의 코드를 순서에 맞춰 입력해주세요. 여러가지일 경우 콤마(,)를 이용하여 입력해주세요. ex) hd001-a,hd001-b"
+                                />
+                            </dd>
+                        </dl>
+                    </form>
+                </div>
+            </div>
+
+
+        </section>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.2/dist/semantic.min.js"></script>
+    <script src="./js/function.js"></script>
+    <script>
+      $("#rangestart").calendar({
+        type: "date",
+        endCalendar: $("#rangeend")
+      });
+      $("#rangeend").calendar({
+        type: "date",
+        startCalendar: $("#rangestart")
+      });
+    </script>
+  </body>
+</html>
