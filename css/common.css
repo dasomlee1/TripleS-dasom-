@@ -59,6 +59,9 @@ dt img:hover + .tooltip-wrap {
 .color-emphasis {
   color: #00d39c;
 }
+.color-alert {
+  color: #fc2221;
+}
 .product-title-wrap {
   overflow: hidden;
   width: 100%;
@@ -171,7 +174,7 @@ dt img:hover + .tooltip-wrap {
   width: 16px;
   height: 16px;
   line-height: 16px;
-  margin: -2px 8px 0 0;
+  /* margin: -2px 8px 0 0; */
   text-align: center;
   vertical-align: middle;
   background: #fafafa;
@@ -215,7 +218,7 @@ table td {
   letter-spacing: -0.75px;
   font-weight: 500;
   white-space: nowrap;
-  text-overflow: ellipsis;
+  /* text-overflow: ellipsis; */
   box-sizing: border-box;
 }
 .table-type1 {
@@ -514,4 +517,41 @@ table td {
   z-index: 999;
   font-size: 0;
   background: url(../images/icon/btn.png);
+}
+
+/* button */
+.btn {
+  height: 48px;
+  border-radius: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: #fff;
+  font-size: 20px;
+}
+.btn-emphasis {
+  background-color: #00d39c;
+}
+.btn-black {
+  background-color: #313131;
+}
+.btn-alert {
+  background-color: #e96968;
+}
+.btn-blue {
+  background-color: #8899ff;
+}
+
+/* helper */
+.w-100 {
+  width: 100%;
+}
+.text-center {
+  text-align: center;
+}
+.py-4 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+.font-weight-bold {
+  font-weight: bold;
 }

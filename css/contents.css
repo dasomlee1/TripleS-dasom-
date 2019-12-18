@@ -526,7 +526,7 @@
 }
 
 /* 공통 - 상품등록  */
-.single-register-page {
+.single-register-page, .multi-register-page {
   width: 990px;
   margin: auto;
   padding-top: 100px;
@@ -611,4 +611,81 @@
   background-color: #ffffff;
   box-sizing: border-box;
   font-size: 2rem;
+}
+
+/* input 에러메시지 */
+.input-message {
+  font-size: 13.5px;;
+  margin-bottom: 0.5rem;
+}
+.input-btn-group {
+  position: relative;
+}
+.input-btn-group .input-btn {
+  position: absolute;
+  right: 0;
+  top: 5px;
+}
+.input-btn-group .input-btn img {
+  width: 83px;
+  height: 37px;
+}
+
+/* option table */
+.option-table-wrap {
+  max-height: 800px;
+  overflow-y: auto;
+}
+.option-table {
+  max-width: 974px
+}
+.option-table td {
+  font-size: 18px;
+  text-overflow: initial;
+  padding: 1rem 0;
+  border: solid 1px #bfbfbf;
+}
+.option-table .table-title td {
+  font-size: 20px;
+  border: none;
+  padding: 1rem 2%;
+}
+.option-table .table-input {
+  height: 38px;
+  border: solid 1px #8899ff;
+  background-color: #ffffff;
+}
+.option-table-footer {
+  margin-top: 1rem;
+  display: flex !important;
+  justify-content: space-between !important;
+}
+.option-text {
+  font-size: 20px;
+  line-height: 2.13;
+  text-align: center;
+}
+.option-chip-group {
+  padding-left: 90px;
+}
+.option-chip {
+  display: inline-block;
+  font-size: 20px;
+  padding: 12px 24px;
+  border-radius: 24.5px;
+  border: solid 1px #00d39c;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+.delete-chip {
+  vertical-align: top;
+  padding-right: 0;
+}
+.delete-chip img {
+  width: 17px;
+  height: 17px;
+}
+.product-list-table tbody tr:hover {
+  cursor: pointer;
+  background-color: #acedd9;
 }

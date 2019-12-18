@@ -419,6 +419,724 @@
 
 
         </section>
+
+        <!-- 대량 상품등록 --->
+        <section class="section multi-register-page">
+          <div class="product-title-wrap">
+              <h3 class="product-title">대량상품등록</h3>
+              <p class="product-desc">옵션가격이 다르거나 옵션이 많은 상품을 등록하여,<br/><em class="color-emphasis">Data 추출 및 분석의 기반</em>을 잡아주는 페이지 입니다. </p>
+              <button class="btn-move" style="padding-left: 38px"><img src="./images/btn_move2.png" alt="대량상품 등록" width="192" height="64"></button>
+              <button class="btn-info"><img src="./images/icon/ico_info2.png" alt="도움말"></button>
+          </div>
+          <div class="product-info-wrap">
+              <div class="product-info-box">
+                  <div class="product-txt">
+                      <h4>[ 상품정보 ]</h4>
+                      <p><em class="color-emphasis">상품정보</em>를 입력해주세요!</p>
+                  </div>
+                  <div class="product-mid">
+                      <label for="mid">mid</label>
+                      <input type="text" id="mid" placeholder="상품명을 입력해주세요."/>
+                  </div>
+              </div>
+              <div class="product-info-form">
+                  <form action="">
+                      <dl class="product-input-area">
+                        <dt>상품명</dt>
+                        <dd>
+                            <p class="input-message color-alert">*필수 입력란입니다.</p>
+                            <input
+                            type="text"
+                            id=""
+                            placeholder="상품명을 입력해주세요."
+                            />
+                        </dd>
+                      </dl>
+                      <dl class="product-input-area">
+                        <dt>옵션1</dt>
+                        <dd>
+                          <div class="input-btn-group">
+                            <input
+                            type="text"
+                            id=""
+                            placeholder="옵션이 여러가지일 경우 콤마(,)를 이용하여 입력해주세요. ex)블랙,화이트,그레이"
+                            />
+                            <button class="input-btn" onclick="addOption()">
+                              <img src="./images/input-btn.png" alt="input btn">
+                            </button>
+                          </div>
+                        </dd>
+                      </dl>
+                      <div class="option-chip-group">
+                        <div class="option-chip">
+                          레드
+                          <button class="delete-chip" onclick="deleteChip(this)"><img src="./images/delete-chip.png" alt="delete chip"></button>
+                        </div>
+                        <div class="option-chip">
+                          오렌지
+                          <button class="delete-chip" onclick="deleteChip(this)"><img src="./images/delete-chip.png" alt="delete chip"></button>
+                        </div>
+                        <div class="option-chip">
+                          머스타드
+                          <button class="delete-chip" onclick="deleteChip(this)"><img src="./images/delete-chip.png" alt="delete chip"></button>
+                        </div>
+                        <div class="option-chip">
+                          그린
+                          <button class="delete-chip" onclick="deleteChip(this)"><img src="./images/delete-chip.png" alt="delete chip"></button>
+                        </div>
+                        <div class="option-chip">
+                          수박
+                          <button class="delete-chip" onclick="deleteChip(this)"><img src="./images/delete-chip.png" alt="delete chip"></button>
+                        </div>
+                        <div class="option-chip">
+                          민트
+                          <button class="delete-chip" onclick="deleteChip(this)"><img src="./images/delete-chip.png" alt="delete chip"></button>
+                        </div>
+                        <div class="option-chip">
+                          블루
+                          <button class="delete-chip" onclick="deleteChip(this)"><img src="./images/delete-chip.png" alt="delete chip"></button>
+                        </div>
+                        <div class="option-chip">
+                          퍼플
+                          <button class="delete-chip" onclick="deleteChip(this)"><img src="./images/delete-chip.png" alt="delete chip"></button>
+                        </div>
+                      </div>
+                      <dl class="product-input-area">
+                        <dt>옵션2</dt>
+                        <dd>
+                          <div class="input-btn-group">
+                            <input
+                            type="text"
+                            id=""
+                            placeholder="옵션이 여러가지일 경우 콤마(,)를 이용하여 입력해주세요. ex) 블랙, 화이트, 그레이"
+                            />
+                            <button class="input-btn" onclick="addOption()">
+                              <img src="./images/input-btn.png" alt="input btn">
+                            </button>
+                          </div>
+                        </dd>
+                      </dl>
+                      <div class="option-chip-group">
+                        <div class="option-chip">
+                          SS
+                          <button class="delete-chip" onclick="deleteChip(this)"><img src="./images/delete-chip.png" alt="delete chip"></button>
+                        </div>
+                        <div class="option-chip">
+                          S
+                          <button class="delete-chip" onclick="deleteChip(this)"><img src="./images/delete-chip.png" alt="delete chip"></button>
+                        </div>
+                        <div class="option-chip">
+                          M
+                          <button class="delete-chip" onclick="deleteChip(this)"><img src="./images/delete-chip.png" alt="delete chip"></button>
+                        </div>
+                        <div class="option-chip">
+                          L
+                          <button class="delete-chip" onclick="deleteChip(this)"><img src="./images/delete-chip.png" alt="delete chip"></button>
+                        </div>
+                        <div class="option-chip">
+                          XL
+                          <button class="delete-chip" onclick="deleteChip(this)"><img src="./images/delete-chip.png" alt="delete chip"></button>
+                        </div>
+                        <div class="option-chip">
+                          2XL
+                          <button class="delete-chip" onclick="deleteChip(this)"><img src="./images/delete-chip.png" alt="delete chip"></button>
+                        </div>
+                        <div class="option-chip">
+                          3XL
+                          <button class="delete-chip" onclick="deleteChip(this)"><img src="./images/delete-chip.png" alt="delete chip"></button>
+                        </div>
+                        <div class="option-chip">
+                          4XL
+                          <button class="delete-chip" onclick="deleteChip(this)"><img src="./images/delete-chip.png" alt="delete chip"></button>
+                        </div>
+                        <div class="option-chip">
+                          5XL
+                          <button class="delete-chip" onclick="deleteChip(this)"><img src="./images/delete-chip.png" alt="delete chip"></button>
+                        </div>
+                        <div class="option-chip">
+                          6XL
+                          <button class="delete-chip" onclick="deleteChip(this)"><img src="./images/delete-chip.png" alt="delete chip"></button>
+                        </div>
+                      </div>
+
+                      <div style="padding-left: 90px">
+                        <button class="btn btn-emphasis">옵션 구성하기</button>
+                      </div>
+
+                      <div class="option-table-wrap" style="margin-top: 64px">
+                        <table class="option-table text-center w-100">
+                          <tr class="table-title">
+                            <td style="width: 51px"></td>
+                            <td colspan="2">
+                              <button class="btn btn-black w-100">모든 항목 일괄적용</button>
+                            </td>
+                            <td>
+                              <button class="btn btn-black">일괄적용</button>
+                            </td>
+                            <td>
+                              <button class="btn btn-black">일괄적용</button>
+                            </td>
+                            <td>
+                              <button class="btn btn-black">일괄적용</button>
+                            </td>
+                          </tr>
+                          <tr class="table-title">
+                            <td></td>
+                            <td>옵션1</td>
+                            <td>옵션2</td>
+                            <td>추가금액</td>
+                            <td>모델명</td>
+                            <td>옵션코드</td>
+                          </tr>
+                          <tr class="table-title">
+                            <td>
+                              <span class="checkbox">
+                                <input type="checkbox" id="checkall">
+                                <label for="checkall"></label>
+                              </span>
+                            </td>
+                            <td>
+                              <input type="text" class="table-input w-100">
+                            </td>
+                            <td>
+                              <input type="text" class="table-input w-100">
+                            </td>
+                            <td>
+                              <input type="text" class="table-input w-100">
+                            </td>
+                            <td>
+                              <input type="text" class="table-input w-100">
+                            </td>
+                            <td>
+                              <input type="text" class="table-input w-100">
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <span class="checkbox">
+                                <input type="checkbox" id="check1">
+                                <label for="check1"></label>
+                              </span>
+                            </td>
+                            <td>레드</td>
+                            <td>SS</td>
+                            <td>0</td>
+                            <td>hdh013</td>
+                            <td>hdh013-R</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <span class="checkbox">
+                                <input type="checkbox" id="check1">
+                                <label for="check1"></label>
+                              </span>
+                            </td>
+                            <td>레드</td>
+                            <td>SS</td>
+                            <td>0</td>
+                            <td>hdh013</td>
+                            <td>hdh013-R</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <span class="checkbox">
+                                <input type="checkbox" id="check1">
+                                <label for="check1"></label>
+                              </span>
+                            </td>
+                            <td>레드</td>
+                            <td>SS</td>
+                            <td>0</td>
+                            <td>hdh013</td>
+                            <td>hdh013-R</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <span class="checkbox">
+                                <input type="checkbox" id="check1">
+                                <label for="check1"></label>
+                              </span>
+                            </td>
+                            <td>레드</td>
+                            <td>SS</td>
+                            <td>0</td>
+                            <td>hdh013</td>
+                            <td>hdh013-R</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <span class="checkbox">
+                                <input type="checkbox" id="check1">
+                                <label for="check1"></label>
+                              </span>
+                            </td>
+                            <td>레드</td>
+                            <td>SS</td>
+                            <td>0</td>
+                            <td>hdh013</td>
+                            <td>hdh013-R</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <span class="checkbox">
+                                <input type="checkbox" id="check1">
+                                <label for="check1"></label>
+                              </span>
+                            </td>
+                            <td>레드</td>
+                            <td>SS</td>
+                            <td>0</td>
+                            <td>hdh013</td>
+                            <td>hdh013-R</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <span class="checkbox">
+                                <input type="checkbox" id="check1">
+                                <label for="check1"></label>
+                              </span>
+                            </td>
+                            <td>레드</td>
+                            <td>SS</td>
+                            <td>0</td>
+                            <td>hdh013</td>
+                            <td>hdh013-R</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <span class="checkbox">
+                                <input type="checkbox" id="check1">
+                                <label for="check1"></label>
+                              </span>
+                            </td>
+                            <td>레드</td>
+                            <td>SS</td>
+                            <td>0</td>
+                            <td>hdh013</td>
+                            <td>hdh013-R</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <span class="checkbox">
+                                <input type="checkbox" id="check1">
+                                <label for="check1"></label>
+                              </span>
+                            </td>
+                            <td>레드</td>
+                            <td>SS</td>
+                            <td>0</td>
+                            <td>hdh013</td>
+                            <td>hdh013-R</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <span class="checkbox">
+                                <input type="checkbox" id="check1">
+                                <label for="check1"></label>
+                              </span>
+                            </td>
+                            <td>레드</td>
+                            <td>SS</td>
+                            <td>0</td>
+                            <td>hdh013</td>
+                            <td>hdh013-R</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <span class="checkbox">
+                                <input type="checkbox" id="check1">
+                                <label for="check1"></label>
+                              </span>
+                            </td>
+                            <td>레드</td>
+                            <td>SS</td>
+                            <td>0</td>
+                            <td>hdh013</td>
+                            <td>hdh013-R</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <span class="checkbox">
+                                <input type="checkbox" id="check1">
+                                <label for="check1"></label>
+                              </span>
+                            </td>
+                            <td>레드</td>
+                            <td>SS</td>
+                            <td>0</td>
+                            <td>hdh013</td>
+                            <td>hdh013-R</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <span class="checkbox">
+                                <input type="checkbox" id="check1">
+                                <label for="check1"></label>
+                              </span>
+                            </td>
+                            <td>레드</td>
+                            <td>SS</td>
+                            <td>0</td>
+                            <td>hdh013</td>
+                            <td>hdh013-R</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <span class="checkbox">
+                                <input type="checkbox" id="check1">
+                                <label for="check1"></label>
+                              </span>
+                            </td>
+                            <td>레드</td>
+                            <td>SS</td>
+                            <td>0</td>
+                            <td>hdh013</td>
+                            <td>hdh013-R</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <span class="checkbox">
+                                <input type="checkbox" id="check1">
+                                <label for="check1"></label>
+                              </span>
+                            </td>
+                            <td>레드</td>
+                            <td>SS</td>
+                            <td>0</td>
+                            <td>hdh013</td>
+                            <td>hdh013-R</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <span class="checkbox">
+                                <input type="checkbox" id="check1">
+                                <label for="check1"></label>
+                              </span>
+                            </td>
+                            <td>레드</td>
+                            <td>SS</td>
+                            <td>0</td>
+                            <td>hdh013</td>
+                            <td>hdh013-R</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <span class="checkbox">
+                                <input type="checkbox" id="check1">
+                                <label for="check1"></label>
+                              </span>
+                            </td>
+                            <td>레드</td>
+                            <td>SS</td>
+                            <td>0</td>
+                            <td>hdh013</td>
+                            <td>hdh013-R</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <span class="checkbox">
+                                <input type="checkbox" id="check1">
+                                <label for="check1"></label>
+                              </span>
+                            </td>
+                            <td>레드</td>
+                            <td>SS</td>
+                            <td>0</td>
+                            <td>hdh013</td>
+                            <td>hdh013-R</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <span class="checkbox">
+                                <input type="checkbox" id="check1">
+                                <label for="check1"></label>
+                              </span>
+                            </td>
+                            <td>레드</td>
+                            <td>SS</td>
+                            <td>0</td>
+                            <td>hdh013</td>
+                            <td>hdh013-R</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <span class="checkbox">
+                                <input type="checkbox" id="check1">
+                                <label for="check1"></label>
+                              </span>
+                            </td>
+                            <td>레드</td>
+                            <td>SS</td>
+                            <td>0</td>
+                            <td>hdh013</td>
+                            <td>hdh013-R</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <span class="checkbox">
+                                <input type="checkbox" id="check1">
+                                <label for="check1"></label>
+                              </span>
+                            </td>
+                            <td>레드</td>
+                            <td>SS</td>
+                            <td>0</td>
+                            <td>hdh013</td>
+                            <td>hdh013-R</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <span class="checkbox">
+                                <input type="checkbox" id="check1">
+                                <label for="check1"></label>
+                              </span>
+                            </td>
+                            <td>레드</td>
+                            <td>SS</td>
+                            <td>0</td>
+                            <td>hdh013</td>
+                            <td>hdh013-R</td>
+                          </tr>
+                        </table>
+                      </div>
+                      <div class="option-table-footer">
+                        <div>
+                          <button class="btn btn-black">대표</button>
+                          <button class="btn btn-alert">선택 삭제</button>
+                        </div>
+                        <p class="option-text">옵션갯수: 총 <span>150</span>개</p>
+                        <p class="option-text color-emphasis">대표상품 선택 완료!: <span>레드SS</span></p>
+                        <div>
+                          <button class="btn btn-blue">옵션명 검색켜기</button>
+                        </div>
+                      </div>
+                  </form>
+              </div>
+          </div>
+        </section>
+
+        <!-- 상품목록 -->
+        <section class="section product-list">
+          <div class="title-box">
+            <h2 class="title">상품목록</h2>
+            <p class="desc">
+              등록하신 상품의 목록을 뿌려주는 페이지입니다.
+            </p>
+          </div>
+          <div class="keyword-search-wrap shopping-search-wrap">
+            <form action="">
+              <div class="search-input">
+                <select name="item" id="">
+                  <option value="item1">제품명</option>
+                  <option value="item2">상품번호</option>
+                </select>
+                <input
+                  type="text"
+                  id=""
+                  placeholder="좌측리스트를 선택 후 검색하세요."
+                />
+                <button class="search-btn">검색</button>
+              </div>
+            </form>
+          </div>
+          <div class="keyword-search-wrap">
+            <div class="keyword-list">
+              <div class="table-wrap">
+                <table class="product-list-table table-type3">
+                  <colgroup>
+                    <col width="5%" />
+                    <col width="15%" />
+                    <col width="15%" />
+                    <col width="20%" />
+                    <col width="20%" />
+                    <col width="15%" />
+                    <col width="15%" />
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th>
+                        <span class="checkbox">
+                          <input type="checkbox" id="allCheck" />
+                          <label for="allCheck"></label>
+                        </span>
+                      </th>
+                      <th>상품번호</th>
+                      <th>제품명</th>
+                      <th>스토어팜</th>
+                      <th>쿠팡</th>
+                      <th>오픈마켓</th>
+                      <th>티몬</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr onclick="clickProduct();">
+                      <td>
+                        <span class="checkbox">
+                          <input type="checkbox" id="check_1" />
+                          <label for="check_1"></label>
+                        </span>
+                      </td>
+                      <td>h6xl-0001</td>
+                      <td>빅사이즈 후드티</td>
+                      <td>78,500</td>
+                      <td>78,500</td>
+                      <td>78,500</td>
+                      <td>78,500</td>
+                    </tr>
+                     <tr onclick="clickProduct();">
+                      <td>
+                        <span class="checkbox">
+                          <input type="checkbox" id="check_2" />
+                          <label for="check_2"></label>
+                        </span>
+                      </td>
+                      <td>h6xl-0001</td>
+                      <td>빅사이즈 후드티</td>
+                      <td>78,500</td>
+                      <td>78,500</td>
+                      <td>78,500</td>
+                      <td>78,500</td>
+                    </tr>
+                     <tr onclick="clickProduct();">
+                      <td>
+                        <span class="checkbox">
+                          <input type="checkbox" id="check_3" />
+                          <label for="check_3"></label>
+                        </span>
+                      </td>
+                      <td>h6xl-0001</td>
+                      <td>빅사이즈 후드티</td>
+                      <td>78,500</td>
+                      <td>78,500</td>
+                      <td>78,500</td>
+                      <td>78,500</td>
+                    </tr>
+                     <tr onclick="clickProduct();">
+                      <td>
+                        <span class="checkbox">
+                          <input type="checkbox" id="check_4" />
+                          <label for="check_4"></label>
+                        </span>
+                      </td>
+                      <td>h6xl-0001</td>
+                      <td>빅사이즈 후드티</td>
+                      <td>78,500</td>
+                      <td>78,500</td>
+                      <td>78,500</td>
+                      <td>78,500</td>
+                    </tr>
+                     <tr onclick="clickProduct();">
+                      <td>
+                        <span class="checkbox">
+                          <input type="checkbox" id="check_5" />
+                          <label for="check_5"></label>
+                        </span>
+                      </td>
+                      <td>h6xl-0001</td>
+                      <td>빅사이즈 후드티</td>
+                      <td>78,500</td>
+                      <td>78,500</td>
+                      <td>78,500</td>
+                      <td>78,500</td>
+                    </tr>
+                     <tr onclick="clickProduct();">
+                      <td>
+                        <span class="checkbox">
+                          <input type="checkbox" id="check_6" />
+                          <label for="check_6"></label>
+                        </span>
+                      </td>
+                      <td>h6xl-0001</td>
+                      <td>빅사이즈 후드티</td>
+                      <td>78,500</td>
+                      <td>78,500</td>
+                      <td>78,500</td>
+                      <td>78,500</td>
+                    </tr>
+                     <tr onclick="clickProduct();">
+                      <td>
+                        <span class="checkbox">
+                          <input type="checkbox" id="check_7" />
+                          <label for="check_7"></label>
+                        </span>
+                      </td>
+                      <td>h6xl-0001</td>
+                      <td>빅사이즈 후드티</td>
+                      <td>78,500</td>
+                      <td>78,500</td>
+                      <td>78,500</td>
+                      <td>78,500</td>
+                    </tr>
+                     <tr onclick="clickProduct();">
+                      <td>
+                        <span class="checkbox">
+                          <input type="checkbox" id="check_8" />
+                          <label for="check_8"></label>
+                        </span>
+                      </td>
+                      <td>h6xl-0001</td>
+                      <td>빅사이즈 후드티</td>
+                      <td>78,500</td>
+                      <td>78,500</td>
+                      <td>78,500</td>
+                      <td>78,500</td>
+                    </tr>
+                     <tr onclick="clickProduct();">
+                      <td>
+                        <span class="checkbox">
+                          <input type="checkbox" id="check_9" />
+                          <label for="check_9"></label>
+                        </span>
+                      </td>
+                      <td>h6xl-0001</td>
+                      <td>빅사이즈 후드티</td>
+                      <td>78,500</td>
+                      <td>78,500</td>
+                      <td>78,500</td>
+                      <td>78,500</td>
+                    </tr>
+                     <tr onclick="clickProduct();">
+                      <td>
+                        <span class="checkbox">
+                          <input type="checkbox" id="check_10" />
+                          <label for="check_10"></label>
+                        </span>
+                      </td>
+                      <td>h6xl-0001</td>
+                      <td>빅사이즈 후드티</td>
+                      <td>78,500</td>
+                      <td>78,500</td>
+                      <td>78,500</td>
+                      <td>78,500</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="paging-wrap">
+                <ul class="paging">
+                  <li>
+                    <a href="#"
+                      ><img src="./images/icon/ico_arrow.png" alt="prev"
+                    /></a>
+                  </li>
+                  <li class="active"><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li>
+                    <a href="#"
+                      ><img src="./images/icon/ico_arrow.png" alt="next"
+                    /></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="btn-area">
+                <button class="modify-btn">수정</button>
+                <button class="delete-btn">삭제</button>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>

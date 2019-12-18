@@ -81,3 +81,18 @@ function mobileMenu() {
     $(this).addClass("active");
   });
 }
+
+// 옵션 추가
+function addOption() {
+  alert('옵션 추가');
+}
+
+// 옵션 칩 삭제
+function deleteChip(e) {
+  $(e).parent('.option-chip').remove()
+}
+
+// 상품목록 행 클릭
+function clickProduct() {
+  alert('상품 정보');
+}
