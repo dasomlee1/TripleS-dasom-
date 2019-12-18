@@ -41,6 +41,13 @@
   #content {
     width: 90%;
   }
+  /* PC,모바일 툴팁 */
+  h3 button:hover + .tooltip-wrap {
+    display: none;
+  }
+  dt img:hover + .tooltip-wrap {
+    display: none;
+  }
   /*키워드분석 */
   .anlysis-page-wrap .input-box {
     max-width: 100%;

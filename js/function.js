@@ -82,6 +82,18 @@ function mobileMenu() {
   });
 }
 
+function mobileTooltip() {
+  $btnClose = $(".m-tooltip-wrap .m-tooltip button");
+
+  $btnClose.click(function() {
+    $(".m-tooltip-wrap").hide();
+  });
+
+  $(".m-tooltip1").click(function() {
+    $(".tooltip1").show();
+  });
+}
+
 // 옵션 추가
 function addOption() {
   alert('옵션 추가');

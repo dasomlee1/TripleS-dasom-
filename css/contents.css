@@ -452,7 +452,7 @@
   box-sizing: border-box;
 }
 .shopping-search-wrap .search-input input[type="text"] {
-  width: 285px !important;
+  width: 284px !important;
   border: 0 !important;
 }
 .shopping-search-wrap select {
@@ -463,8 +463,8 @@
   border: 0;
   border-right: 1px solid #e5e5e5;
   background: url(../images/icon/ico_down3.png) no-repeat 90% 50%;
-  text-align: center;
-  text-indent: 10px;
+  text-align: left;
+  text-indent: 5px;
   font-size: 1.6rem;
   letter-spacing: -0.8px;
   color: #999;
@@ -535,7 +535,7 @@
   margin: 50px 0;
 }
 .product-info-box {
-  overflow: hidden;
+  height: 64px;
 }
 .product-info-box .product-txt {
   float: left;
@@ -611,6 +611,40 @@
   background-color: #ffffff;
   box-sizing: border-box;
   font-size: 2rem;
+}
+.product-info-wrap2 .product-info-box {
+  width: 100%;
+  height: 90px;
+}
+.product-info-wrap2 .product-info-box .product-txt {
+  width: 100%;
+}
+.product-info-wrap2 .product-info-box p:last-of-type {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  color: #a0a0a0;
+}
+.product-info-wrap2 .product-info-form .product-input-area {
+  padding-bottom: 15px;
+}
+.btn-product-wrap {
+  text-align: center;
+}
+.btn-product-wrap button {
+  width: 190px;
+  height: 64px;
+  background: #a0a0a0;
+  color: #fff;
+  font-size: 2.6rem;
+  font-weight: 600;
+}
+.btn-product-wrap button[type="submit"] {
+  margin-left: 18px;
+  background: #00d39c;
+}
+/* input error */
+.error input {
+  border: solid 1px #fc2221 !important;
 }
 
 /* input 에러메시지 */
